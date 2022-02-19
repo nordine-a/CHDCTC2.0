@@ -1,28 +1,33 @@
+// main: style.scss
+
+$primary-color: #020659;
+$secondary-color: #F25C05;
+
+
 @fontface {
   font-family: "Titilium-Web";
   src: url("assets/fonts/titillium-webregular.woff") format("woff");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 @fontface {
   font-family: "Titilium-Web";
   src: url("assets/fonts/titillium-web-600.woff") format("woff");
   font-style: normal;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 @fontface {
   font-family: "Titilium-Web";
   src: url("assets/fonts/titillium-web-700.woff") format("woff");
   font-style: normal;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 @fontface {
   font-family: "Titilium-Web";
   src: url("assets/fonts/titillium-web-900.woff") format("woff");
   font-style: normal;
-  font-weight: 900; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  font-weight: 900;
+}
