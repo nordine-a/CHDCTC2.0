@@ -1,4 +1,4 @@
-//compileNested: ../assets/css/$1.css
+//compileNested: ../css/$1.css
 
 @import "variables";
 
@@ -6,4 +6,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Titilium-Web";
+}
+
+
+.page-header {
+  background-color: $primary-color;
+  
 }

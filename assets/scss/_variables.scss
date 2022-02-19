@@ -1,9 +1,4 @@
 // main: style.scss
-
-$primary-color: #020659;
-$secondary-color: #F25C05;
-
-
 @fontface {
   font-family: "Titilium-Web";
   src: url("assets/fonts/titillium-webregular.woff") format("woff");
@@ -31,3 +26,6 @@ $secondary-color: #F25C05;
   font-style: normal;
   font-weight: 900;
 }
+
+$primary-color: #020659;
+$secondary-color: #F25C05;
