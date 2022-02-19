@@ -32,3 +32,5 @@ body {
 
 .page-header {
   background-color: #020659; }
+  .page-header .logo-social {
+    background-color: red; }
