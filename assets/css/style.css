@@ -31,6 +31,21 @@ body {
   font-family: "Titilium-Web"; }
 
 .page-header {
-  background-color: #020659; }
-  .page-header .logo-social {
-    background-color: red; }
+  height: 80px;
+  background-color: #020659;
+  padding: 0 25px;
+  display: flex;
+  align-items: center; }
+  .page-header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .page-header nav .logo-social {
+      display: flex; }
+    .page-header nav img {
+      height: 24px;
+      margin-right: 10px; }
+    .page-header nav .logo {
+      margin-right: 22px; }
+    .page-header nav .menu-icon {
+      height: 28px; }
