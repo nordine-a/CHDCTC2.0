@@ -1,24 +1,24 @@
-@fontface {
-  font-family: "Titilium-Web";
-  src: url("assets/fonts/titillium-webregular.woff") format("woff");
+@font-face {
+  font-family: "Titillium-Web";
+  src: url("../fonts/TitilliumWeb-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400; }
 
-@fontface {
-  font-family: "Titilium-Web";
-  src: url("assets/fonts/titillium-web-600.woff") format("woff");
+@font-face {
+  font-family: "Titillium-Web";
+  src: url("../fonts/TitilliumWeb-SemiBold.woff") format("woff");
   font-style: normal;
   font-weight: 600; }
 
-@fontface {
-  font-family: "Titilium-Web";
-  src: url("assets/fonts/titillium-web-700.woff") format("woff");
+@font-face {
+  font-family: "Titillium-Web";
+  src: url("../fonts/TitilliumWeb-Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700; }
 
-@fontface {
-  font-family: "Titilium-Web";
-  src: url("assets/fonts/titillium-web-900.woff") format("woff");
+@font-face {
+  font-family: "Titillium-Web";
+  src: url("../fonts/TitilliumWeb-Black.woff") format("woff");
   font-style: normal;
   font-weight: 900; }
 
@@ -28,7 +28,9 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Titilium-Web"; }
+  font-family: "Titillium-Web";
+  font-weight: 400;
+  color: #020659; }
 
 .page-header {
   height: 80px;
@@ -41,7 +43,8 @@ body {
     display: flex;
     justify-content: space-between; }
     .page-header nav .logo-social {
-      display: flex; }
+      display: flex;
+      align-items: center; }
     .page-header nav img {
       height: 24px;
       margin-right: 10px; }
@@ -49,3 +52,31 @@ body {
       margin-right: 22px; }
     .page-header nav .menu-icon {
       height: 28px; }
+
+main .hero-section {
+  padding: 0 25px;
+  height: 400px;
+  background-color: #F25C05;
+  position: relative; }
+  main .hero-section h1 {
+    text-transform: uppercase;
+    font-family: "Titillium-Web";
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px; }
+  main .hero-section h1, main .hero-section h2, main .hero-section p, main .hero-section button {
+    border: 1px solid red; }
+  main .hero-section h2, main .hero-section p, main .hero-section button {
+    color: white; }
+  main .hero-section h2 {
+    font-size: 25px;
+    font-family: "Titillium-Web";
+    font-weight: 700; }
+  main .hero-section p {
+    font-size: 18;
+    font-family: "Titillium-Web";
+    font-weight: 600; }
+  main .hero-section img {
+    position: absolute;
+    left: 0;
+    bottom: 0; }

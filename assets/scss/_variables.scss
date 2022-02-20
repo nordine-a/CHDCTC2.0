@@ -1,28 +1,29 @@
 // main: style.scss
-@fontface {
-  font-family: "Titilium-Web";
-  src: url("assets/fonts/titillium-webregular.woff") format("woff");
+
+@font-face {
+  font-family: "Titillium-Web";
+  src: url("../fonts/TitilliumWeb-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
-@fontface {
-  font-family: "Titilium-Web";
-  src: url("assets/fonts/titillium-web-600.woff") format("woff");
+@font-face {
+  font-family: "Titillium-Web";
+  src: url("../fonts/TitilliumWeb-SemiBold.woff") format("woff");
   font-style: normal;
   font-weight: 600;
 }
 
-@fontface {
-  font-family: "Titilium-Web";
-  src: url("assets/fonts/titillium-web-700.woff") format("woff");
+@font-face {
+  font-family: "Titillium-Web";
+  src: url("../fonts/TitilliumWeb-Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
 
-@fontface {
-  font-family: "Titilium-Web";
-  src: url("assets/fonts/titillium-web-900.woff") format("woff");
+@font-face {
+  font-family: "Titillium-Web";
+  src: url("../fonts/TitilliumWeb-Black.woff") format("woff");
   font-style: normal;
   font-weight: 900;
 }
