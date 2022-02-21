@@ -22,6 +22,12 @@
   font-style: normal;
   font-weight: 900; }
 
+.section-header, main section h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 35px; }
+
 .button, .blue-button, .orange-button {
   border-radius: 10px;
   color: white;
@@ -68,6 +74,9 @@ body {
     .page-header nav .menu-icon {
       height: 28px; }
 
+main section {
+  padding: 10px 25px 2px 25px; }
+
 main .hero-section {
   padding: 10px 25px 2px 25px;
   height: 400px;
@@ -79,10 +88,8 @@ main .hero-section {
   flex-wrap: wrap;
   justify-content: space-between; }
   main .hero-section h1 {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 40px; }
+    font-size: 40px !important;
+    line-height: 40px !important; }
   main .hero-section .mobile-right-align {
     display: flex;
     flex-direction: column;
@@ -113,3 +120,18 @@ main .hero-section {
     bottom: 0;
     width: 239px;
     z-index: -1; }
+
+main .work-preview {
+  padding-top: 20px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .work-preview h1, main .work-preview img {
+    margin-bottom: 20px; }
+  main .work-preview img {
+    width: 208px; }
+  main .work-preview button {
+    font-size: 20px !important;
+    text-transform: uppercase;
+    width: 270px;
+    font-weight: 600; }

@@ -17,6 +17,13 @@ body {
 
 
 main {
+
+  section {
+    padding: 10px 25px 2px 25px;
+    h1 {
+      @extend .section-header;
+    }
+  }
   .hero-section {
     padding: 10px 25px 2px 25px;
     height: 400px;
@@ -29,10 +36,8 @@ main {
     justify-content: space-between;
 
     h1 {
-      text-transform: uppercase;
-      font-weight: 900;
-      font-size: 40px;
-      line-height: 40px;
+      font-size: 40px !important;
+      line-height: 40px !important;
     }
 
     .mobile-right-align {
@@ -85,7 +90,27 @@ main {
       width: 239px;
       z-index: -1;
     }
+  }
+
+  .work-preview {
+    padding-top: 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
+    h1, img {
+      margin-bottom: 20px;
+    }
+    img {
+      width: 208px;
+    }
+
+    button {
+      font-size: 20px !important;
+      text-transform: uppercase;
+      width: 270px;
+      font-weight: 600;
+    }
   }
 }
