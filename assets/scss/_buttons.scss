@@ -1,0 +1,21 @@
+//main: style.scss
+.button {
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 7px 9px;
+  display: block;
+  font-size: 25px;
+}
+
+.blue-button {
+  @extend .button;
+  background-color: $primary-color;
+}
+
+.orange-button {
+  @extend .button;
+  border: 1px solid white !important;
+  background-color: $secondary-color;
+}

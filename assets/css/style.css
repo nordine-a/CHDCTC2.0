@@ -22,14 +22,29 @@
   font-style: normal;
   font-weight: 900; }
 
+.button, .blue-button, .orange-button {
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 7px 9px;
+  display: block;
+  font-size: 25px; }
+
+.blue-button {
+  background-color: #020659; }
+
+.orange-button {
+  border: 1px solid white !important;
+  background-color: #F25C05; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: "Titillium-Web";
-  font-weight: 400;
+  font-family: "Titillium-Web", sans-serif;
   color: #020659; }
 
 .page-header {
@@ -54,29 +69,47 @@ body {
       height: 28px; }
 
 main .hero-section {
-  padding: 0 25px;
+  padding: 10px 25px 2px 25px;
   height: 400px;
   background-color: #F25C05;
-  position: relative; }
+  z-index: -2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between; }
   main .hero-section h1 {
     text-transform: uppercase;
-    font-family: "Titillium-Web";
     font-weight: 900;
     font-size: 40px;
     line-height: 40px; }
-  main .hero-section h1, main .hero-section h2, main .hero-section p, main .hero-section button {
-    border: 1px solid red; }
-  main .hero-section h2, main .hero-section p, main .hero-section button {
-    color: white; }
-  main .hero-section h2 {
+  main .hero-section .mobile-right-align {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    main .hero-section .mobile-right-align * {
+      width: 226px;
+      color: white; }
+    main .hero-section .mobile-right-align h2 {
+      font-size: 25px;
+      line-height: 25px;
+      font-weight: 700;
+      margin-bottom: 4px; }
+    main .hero-section .mobile-right-align p {
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400; }
+  main .hero-section .hero-buttons button {
+    margin: 5px auto 0px auto;
     font-size: 25px;
-    font-family: "Titillium-Web";
-    font-weight: 700; }
-  main .hero-section p {
-    font-size: 18;
-    font-family: "Titillium-Web";
-    font-weight: 600; }
+    line-height: 25px;
+    width: 177px; }
+  main .hero-section .blue-button {
+    font-size: 20px !important;
+    text-transform: uppercase; }
   main .hero-section img {
     position: absolute;
     left: 0;
-    bottom: 0; }
+    bottom: 0;
+    width: 239px;
+    z-index: -1; }
