@@ -135,3 +135,47 @@ main .work-preview {
     text-transform: uppercase;
     width: 270px;
     font-weight: 600; }
+
+main .skills {
+  background-color: #020659;
+  color: white; }
+  main .skills h1 {
+    text-align: center;
+    margin-bottom: 30px; }
+  main .skills .skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    main .skills .skills-cards .card {
+      text-align: center;
+      width: calc(50% - 25px);
+      margin-top: 25px; }
+      main .skills .skills-cards .card h2 {
+        text-transform: uppercase; }
+      main .skills .skills-cards .card .score-bar, main .skills .skills-cards .card .score-bar-level {
+        height: 8px;
+        border: none;
+        border-radius: 4px; }
+      main .skills .skills-cards .card .score-bar {
+        width: 100%;
+        background-color: white; }
+    main .skills .skills-cards img {
+      width: 80px; }
+    main .skills .skills-cards .html .score-bar-level {
+      width: 75%;
+      background-color: #E44D26; }
+    main .skills .skills-cards .css .score-bar-level {
+      width: 70%;
+      background-color: #2965F1; }
+    main .skills .skills-cards .coding .score-bar-level {
+      width: 30%;
+      background-color: #57F2AA; }
+    main .skills .skills-cards .design .score-bar-level {
+      width: 50%;
+      background-color: #007AA3; }
+    main .skills .skills-cards .photoshop .score-bar-level {
+      width: 60%;
+      background-color: #03A9F4; }
+    main .skills .skills-cards .excel .score-bar-level {
+      width: 70%;
+      background-color: #1E7145; }
