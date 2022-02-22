@@ -1,0 +1,18 @@
+//main: style.scss
+
+.page-footer {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+
+  .orange-frst-letter {
+    p {
+      display: inline-block;
+    }
+    p::first-letter {
+      color: $secondary-color;
+    }
+  }
+
+
+}
