@@ -1,4 +1,4 @@
-//compileNested: ../css/$1.css
+//compileCompressed: ../css/$1.min.css
 @import "variables";
 @import "mixins";
 @import "buttons";
@@ -8,12 +8,17 @@
   box-sizing: border-box;
 }
 
+.only-desktop {
+  display: none;
+}
+
 body {
   font-family: "Titillium-Web", sans-serif;
   color: $primary-color;
 }
 
 @import "header";
+
 
 
 main {
@@ -35,20 +40,18 @@ main {
     justify-content: space-between;
 
     h1 {
-      font-size: 40px !important;
-      line-height: 40px !important;
+      font-size: 40px ;
+      line-height: 40px ;
     }
 
     .mobile-right-align {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      align-self: flex-end;
+      width: 226px;
+      color: white;
 
-
-      * {
-        width: 226px;
-        color: white;
-      }
 
       h2 {
         font-size: 25px;
@@ -69,6 +72,7 @@ main {
     //   border: 1px solid red;
     //   margin-bottom: 0px;
     // }
+
     .hero-buttons button {
       margin: 5px auto 0px auto;
       font-size: 25px;
@@ -230,7 +234,11 @@ main {
     }
 
   }
+
+
 }
+
+@import "media-desktop";
 
 
 @import "footer";

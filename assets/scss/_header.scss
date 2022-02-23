@@ -7,9 +7,7 @@
   display: flex;
   align-items: center;
 
-  .only-desktop {
-    display: none;
-  }
+
 
   nav {
     width: 100%;
@@ -39,21 +37,77 @@
 
 @media screen and (min-width: 796px) {
 
-  .page-header {
-    position: relative;
-
-    .only-mobile {
-      display: none;
-    }
-    .only-desktop {
-      display: flex;
-    }
+    .page-header {
+      position: relative;
+      height: 95px;
 
     .logo {
+
+      img {display: block;} //non perfettamente allineata, risolvere
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       position: absolute;
       left: 50%;
       top:18px;
-      transform: translateX(-50%)
+      transform: translateX(-50%);
+    }
+
+
+    .logo-acronym {
+      text-align: center;
+      font-weight: 400;
+      font-size: 15px;
+      color: white;
+    }
+
+    .page-top-nav {
+
+
+      ul {
+        width: 720px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+
+        li {
+          font-size: 22px;
+          font-weight: 600;
+          width: 120px;
+          text-align: center;
+        }
+
+        li.active a{
+            color: $secondary-color;
+        }
+
+
+        .home-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 30px;
+          background-color: $primary-color;
+          border-radius: 5px;
+          border: 1px solid $secondary-color;
+          position: absolute;
+          bottom: -15px;
+          left: 50%;
+          transform: translateX(-50%);
+          a {
+            text-transform: uppercase;
+          }
+
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+
     }
 
   }
