@@ -28,6 +28,7 @@ main {
       @extend .section-header;
     }
   }
+
   .hero-section {
     padding: 10px 25px 2px 25px;
     height: 400px;
@@ -75,7 +76,6 @@ main {
 
     .hero-buttons button {
       margin: 5px auto 0px auto;
-      font-size: 25px;
       line-height: 25px;
       width: 177px;
     }
@@ -101,13 +101,22 @@ main {
     flex-direction: column;
     align-items: center;
 
+    .companies {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid red;
+
+      img {
+        width: 60%;
+      }
+    }
+
 
     h1, img {
       margin-bottom: 20px;
     }
-    img {
-      width: 208px;
-    }
+
 
     button {
       font-size: 20px !important;
