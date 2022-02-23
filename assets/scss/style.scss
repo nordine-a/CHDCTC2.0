@@ -12,6 +12,10 @@
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
 body {
   font-family: "Titillium-Web", sans-serif;
   color: $primary-color;
@@ -30,68 +34,78 @@ main {
   }
 
   .hero-section {
-    padding: 10px 25px 2px 25px;
-    height: 400px;
     background-color: $secondary-color;
     z-index: -2;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    h1 {
-      font-size: 40px ;
-      line-height: 40px ;
-    }
-
-    .mobile-right-align {
+    // img {
+    //   z-index: -1;
+    //   position: absolute;
+    //   //   left: 0;
+    //   //   bottom: 0;
+    //   //   width: 239px;
+    // }
+    .container {
+      padding: 10px 25px 2px 25px;
+      height: 400px;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      align-self: flex-end;
-      width: 226px;
-      color: white;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 40px ;
+        line-height: 40px ;
+      }
+
+      .mobile-right-align {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-self: flex-end;
+        width: 226px;
+        color: white;
 
 
-      h2 {
-        font-size: 25px;
+        h2 {
+          font-size: 25px;
+          line-height: 25px;
+          font-weight: 700;
+          margin-bottom: 4px;
+        }
+
+        p{
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+
+      }
+
+      // .hero-buttons {
+      //   border: 1px solid red;
+      //   margin-bottom: 0px;
+      // }
+
+      .hero-buttons button {
+        margin: 5px auto 0px auto;
         line-height: 25px;
-        font-weight: 700;
-        margin-bottom: 4px;
+        width: 177px;
       }
 
-      p{
-        font-size: 18px;
-        line-height: 18px;
-        font-weight: 400;
+      .blue-button {
+        font-size: 20px!important;
+        text-transform: uppercase;
       }
 
-    }
 
-    // .hero-buttons {
-    //   border: 1px solid red;
-    //   margin-bottom: 0px;
-    // }
+      img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 239px;
+        z-index: -1;
+      }
 
-    .hero-buttons button {
-      margin: 5px auto 0px auto;
-      line-height: 25px;
-      width: 177px;
-    }
-
-    .blue-button {
-      font-size: 20px!important;
-      text-transform: uppercase;
-    }
-
-
-    img {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 239px;
-      z-index: -1;
     }
   }
 
