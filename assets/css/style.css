@@ -59,6 +59,8 @@ body {
   padding: 0 25px;
   display: flex;
   align-items: center; }
+  .page-header .only-desktop {
+    display: none; }
   .page-header nav {
     width: 100%;
     display: flex;
@@ -73,6 +75,19 @@ body {
       margin-right: 22px; }
     .page-header nav .menu-icon {
       height: 28px; }
+
+@media screen and (min-width: 796px) {
+  .page-header {
+    position: relative; }
+    .page-header .only-mobile {
+      display: none; }
+    .page-header .only-desktop {
+      display: flex; }
+    .page-header .logo {
+      position: absolute;
+      left: 50%;
+      top: 18px;
+      transform: translateX(-50%); } }
 
 main section {
   padding: 10px 25px; }

@@ -1,4 +1,4 @@
-
+//main: style.scss
 
 .page-header {
   height: 80px;
@@ -7,6 +7,9 @@
   display: flex;
   align-items: center;
 
+  .only-desktop {
+    display: none;
+  }
 
   nav {
     width: 100%;
@@ -33,3 +36,26 @@
     }
 
   }
+
+@media screen and (min-width: 796px) {
+
+  .page-header {
+    position: relative;
+
+    .only-mobile {
+      display: none;
+    }
+    .only-desktop {
+      display: flex;
+    }
+
+    .logo {
+      position: absolute;
+      left: 50%;
+      top:18px;
+      transform: translateX(-50%)
+    }
+
+  }
+
+}
