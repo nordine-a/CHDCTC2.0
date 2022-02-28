@@ -112,35 +112,44 @@
       }
 
       .social {
-        border: 1px solid white;
+
+        width: 180px;
         height: 44px;
-        border: 1px solid white;
-        margin: auto;
         display: flex;
         justify-content: space-between;
         img {
           height: 100%;
         }
       }
-
     }
-  //   .work-preview {
-  //     .companies {
-  //       flex-direction: row;
-  //       flex-wrap: wrap;
-  //       justify-content: center;
-  //
-  //       img {
-  //         width: calc(80% / 3);
-  //         margin-right: 10%;
-  //       }
-  //
-  //       img:nth-of-type(3n), img:last-of-type {
-  //         margin-right: 0;
-  //       }
-  //
-  //     }
-  //   }
-  // }
+    .work-preview {
+      .companies {
+        margin-bottom: 64px;
+        margin-top: 54px;
+        img {
+          width: calc(100% / 3 - 128px * 2 / 3);
+          margin-right: 128px;
+        }
+
+
+        img:nth-of-type(3n), img:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+    .skills {
+      height: 600px;
+      display: flex;
+      align-items: center;
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+      }
+    }
+    
   }
 }

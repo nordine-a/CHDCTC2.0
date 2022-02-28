@@ -19,7 +19,6 @@
       .mobile-right-align {
         width: 50%;
         align-self: center;
-        border: 1px solid white;
 
         h2 {
           font-size: 25px;
@@ -35,12 +34,57 @@
         }
 
       }
+    }
 
-  }
+    .work-preview {
+      .companies {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
 
+        img {
+          width: calc(50% - 128px / 2);
+          margin-right: 128px;
+        }
+      }
+    }
+
+    .skills {
+      .skills-cards {
+        max-width: 500px;
+        margin: auto;
+        .card {
+          width: calc(100% / 3 - 25px * 2 / 3);
+        }
+      }
+
+      .soft-skills {
+        width: calc(100% / 3 * 2);
+        max-width: (500px / 3 *2);
+        .card {
+          width: calc(50% - 25px);
+      }
 
     }
 
+    .contact-me {
+      button br {
+        display: none;
+      }
+    }
+    }
+}
 
+}
+
+@media screen and (min-width: 481px) and (max-width: 795px) {
+  main {
+
+    .work-preview {
+        img:nth-of-type(2n), img:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
 
 }
