@@ -8,8 +8,13 @@
   box-sizing: border-box;
 }
 
+
 .only-desktop {
   display: none;
+}
+
+.container {
+  width: 100%;
 }
 
 body {
@@ -35,10 +40,15 @@ main {
     background-color: $secondary-color;
     z-index: -2;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 100%;
+    }
 
     h1 {
       font-size: 40px ;
@@ -48,7 +58,7 @@ main {
     .mobile-right-align {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      // align-items: flex-end;
       align-self: flex-end;
       width: 226px;
       color: white;
@@ -76,8 +86,8 @@ main {
 
     .hero-buttons button {
       margin: 5px auto 0px auto;
-      line-height: 25px;
-      width: 177px;
+      line-height: 20px;
+      width: 180px;
     }
 
     .blue-button {
@@ -86,7 +96,7 @@ main {
     }
 
 
-    img {
+    .background-photo{
       position: absolute;
       left: 0;
       bottom: 0;
@@ -247,6 +257,7 @@ main {
 
 }
 
+@import "media-tablet";
 @import "media-desktop";
 
 
