@@ -1,23 +1,41 @@
 ////compileCompressed: $1.min.css
 
+@import "../../assets/scss/variables";
 body{
-  height: 100vh;
-  width: 100vw;
-  font-weight: 600px;
+
 }
 
-
+header {
+  nav {
+    position: relative;
+  }
+}
 ul {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  height: calc(100vh);
+  height: calc(100vh - 80px);
   width: 100%;
   align-items: center;
   list-style-type: none;
   justify-content: center;
 
-  a {
 
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
   }
+
+  li:first-of-type a {
+    text-transform: uppercase;
+    color: $secondary-color;
+  }
+}
+
+.logo-extention {
+  position: absolute;
+  bottom: -63px;
+  height: 63px !important;
 }
