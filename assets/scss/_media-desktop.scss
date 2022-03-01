@@ -99,6 +99,16 @@
     }
 
     .hero-section {
+      h1{
+        br {
+          display: none;
+        }
+
+      }
+
+      .background-photo {
+        bottom: -20px;
+      }
       padding-bottom: 20px;
       .hero-buttons {
         display: flex;
@@ -150,6 +160,6 @@
 
       }
     }
-    
+
   }
 }

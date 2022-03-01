@@ -53,6 +53,7 @@ main {
     }
 
     h1 {
+
       font-size: 40px ;
       line-height: 40px ;
     }
@@ -99,16 +100,14 @@ main {
 
 
     .background-photo{
-      padding: 0;
-      border: 1px solid white;
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 50%;
+      height: calc(100% - 110px);
       z-index: -1;
       img {
+        display: block;
         height: 100%;
-        width: 100%;
       }
     }
   }
