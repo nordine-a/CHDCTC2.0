@@ -16,6 +16,8 @@
 
 main {
   padding: 13px;
+  margin-top: 120px;
+
   h1 {
     font-weight: 900;
     font-size: 35px;
@@ -38,6 +40,8 @@ main {
     padding: 17px 0;
     background-color: $secondary-color;
     width: 100%;
+    max-width: calc(1000px / 3 - 31px * 2 / 3);
+    margin-bottom: 47px;
 
     .mini-gallery{
       background-color: white;
@@ -75,6 +79,29 @@ main {
       }
     }
 
+
+  }
+
+  .card:nth-of-type(2n){
+    background-color: $primary-color;
+    p{.pr-color{color:$secondary-color}}
+
+    h2 {
+      color: $secondary-color;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 1000px) {
+  .work-experience-cards{
+    flex-direction: row;
+    justify-content: space-between;
+
+    .card{
+      height: 400px;
+    }
 
   }
 }
