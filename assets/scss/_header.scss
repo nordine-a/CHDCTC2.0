@@ -43,34 +43,35 @@
         position: relative;
         height: 28px;
         margin-right: 0;
-        z-index: 1;
       }
 
 
 
-      .hidden-mobile-menu {
+      .hidden-mobile-menu, .orange-menu-icon {
         display: none;
-      }
-
-      .menu-closer {
-        height: 28px;
-        width: 50px;
-        position: absolute;
-        right: 25px;
-        margin: 0;
       }
 
       .menu-mobile:hover, .menu-mobile:active{
 
         .white-menu-icon {
-          z-index: -2;
+          display: none;
+        }
+
+        .menu-closer {
+          position: absolute;
+          top: 80px;
+          right: 30px;
+          display: block;
+          height: 28px;
+          margin-right: 0;
         }
 
         .hidden-mobile-menu {
+          z-index: 0 !important;
           display: block;
           position: fixed;
           left: 0;
-          top: 80px;
+          top: 0;
           // top: calc(50%);
           // left: 50%;
           // transform: translate(-50%, -50%);
