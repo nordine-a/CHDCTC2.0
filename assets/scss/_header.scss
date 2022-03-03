@@ -33,7 +33,6 @@
         display: flex;
         align-items: center;
       }
-
       .social {
         display: flex;
         align-items: center;
@@ -47,18 +46,31 @@
 
 
 
+
       .hidden-mobile-menu, .orange-menu-icon {
         display: none;
       }
 
       .menu-mobile:hover, .menu-mobile:active{
 
+        .white-menu-icon {
+          visibility: hidden;
+        }
+        .logo-extention {
+          z-index: 1 !important;
+          position: absolute;
+          width: 112px;
+          left: 25px;
+          top: -28px;
+          height: 63px !important;
+        }
+
         .menu-closer {
+          height: 35px;
           position: absolute;
           top: 80px;
           right: 30px;
           display: block;
-          height: 28px;
           margin-right: 0;
         }
 
