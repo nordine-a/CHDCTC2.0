@@ -9,7 +9,6 @@
 
       .container {
         position: relative;
-        border: 1px solid red;
       }
 
       h1 {
@@ -103,7 +102,7 @@
     .hero-section {
 
       .background-photo{
-        bottom: 0;
+        bottom: -2px;
         left: -68px;
         height: 100%;
       }

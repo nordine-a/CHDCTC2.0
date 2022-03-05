@@ -74,24 +74,25 @@
 
               <div class="hero-buttons">
                 <a href="#contact-me" class="orange-button">Mandami un <br> messaggio</a>
-                <a class="blue-button">Scopri di più <br> su di me</a>
+                <a href="pages/about-me/index.html" class="blue-button">Scopri di più <br> su di me</a>
               </div>
 
               <div class="social only-desktop">
-                <img src="assets/img/social-icons/instagram.png" alt="instagram logo">
-                <img src="assets/img/social-icons/linkedin.png" alt="linkedin logo">
-                <img src="assets/img/social-icons/github.png" alt="github logo">
+                <a href="https://github.com/nordine-a"><img src="assets/img/social-icons/github.png" alt="github logo"></a>
+                <a href="https://www.linkedin.com/in/abdessamad-nordine-b8008522a/"><img src="assets/img/social-icons/linkedin.png" alt="linkedin logo"></a>
+                <a href="https://www.instagram.com/come_hai_detto_che_ti_chiami/"><img src="assets/img/social-icons/instagram.png" alt="instagram logo"></a>
               </div>
+
+              <div class='background-photo'>
+                <picture>
+                  <source media='(min-width: 481px)'
+                  srcset="assets/img/desktop-pres-photo.png"/>
+                  <source media='(max-width: 481px)'
+                  srcset="assets/img/mobile-pres-photo.png"/>
+                  <img src='assets/img/mobile-pres-photo.png'/>
+                </picture>
             </div>
-            
-            <div class='background-photo'>
-              <picture>
-                <source media='(min-width: 481px)'
-                srcset="assets/img/desktop-pres-photo.png"/>
-                <source media='(max-width: 481px)'
-                srcset="assets/img/mobile-pres-photo.png"/>
-                <img src='assets/img/mobile-pres-photo.png'/>
-              </picture>
+
             </div>
           </section>
 
@@ -226,7 +227,6 @@
           <section id="contact-me" class="contact-me">
             <div class="container">
               <h1>mandami un messaggio</h1>
-              <a href="https://www.w3schools.com">Visit W3Schools</a>
               <form class="send-email" action="index.html" method="post">
                 <input type="text" name="" value="" placeholder="Inserisci Nome">
                 <input type="text" name="" value="" placeholder="Inserisci Cognome">
