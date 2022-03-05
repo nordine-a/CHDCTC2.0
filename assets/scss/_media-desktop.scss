@@ -99,6 +99,7 @@
     }
 
     .hero-section {
+      margin-top: 95px;
       h1{
         br {
           display: none;
@@ -107,16 +108,16 @@
       }
 
       .background-photo {
-        bottom: -20px;
+        bottom: 0;
       }
       padding-bottom: 20px;
       .hero-buttons {
         display: flex;
-        button {
+        a {
           width: initial;
         }
 
-        button:first-of-type {
+        a:first-of-type {
           margin-right: 70px;
         }
       }

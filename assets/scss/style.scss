@@ -21,6 +21,11 @@
 body {
   font-family: "Titillium-Web", sans-serif;
   color: $primary-color;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 @import "header";
@@ -37,11 +42,22 @@ main {
   }
 
   .hero-section {
+    background: transparent;
     padding: 10px 25px 2px 25px;
     height: 400px;
-    background-color: $secondary-color;
-    z-index: -2;
+    border: 1px solid red;
     position: relative;
+
+    &:after{  //sereve per evitare di mettere z-index -2 a heto section rendendolo non cliccabile
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: $secondary-color;
+      z-index: -2;
+    }
 
 
     .container {
@@ -88,10 +104,12 @@ main {
     //   margin-bottom: 0px;
     // }
 
-    .hero-buttons button {
+    .hero-buttons a {
+      text-align: center;
       margin: 5px auto 0px auto;
       line-height: 20px;
       width: 180px;
+
     }
 
     .blue-button {
