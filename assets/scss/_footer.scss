@@ -1,9 +1,13 @@
 //main: style.scss
 
 .page-footer {
+  height: 60px;
   background-color: black;
   color: white;
   padding: 5px 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
   .orange-frst-letter {
     p {

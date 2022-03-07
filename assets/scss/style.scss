@@ -19,6 +19,8 @@
 }
 
 body {
+  min-height: 100vh;
+  position: relative;
   font-family: "Titillium-Web", sans-serif;
   color: $primary-color;
 
@@ -261,7 +263,7 @@ main {
       input::placeholder, textarea::placeholder, input[type="submit"] {
 
         color: white;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 400;
       }
 
