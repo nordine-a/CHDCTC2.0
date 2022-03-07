@@ -157,9 +157,11 @@ main {
     }
 
 
-    button {
+    a {
       font-size: 20px !important;
+      line-height: 22px;
       text-transform: uppercase;
+      text-align: center;
       width: 280px;
       font-weight: 600;
     }
