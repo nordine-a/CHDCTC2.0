@@ -17,17 +17,25 @@
   nav {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     .logo-social {
       display: flex;
       align-items: center;
+
+      a {
+        height: 24px;
+        img {
+          height: 100%;
+          margin-right: 10px;
+        }
+      }
     }
 
-      img {
-        height: 24px;
-        margin-right: 10px;
-      }
+
+
+
 
       .logo {
         margin-right: 22px;

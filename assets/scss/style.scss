@@ -19,7 +19,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   position: relative;
   font-family: "Titillium-Web", sans-serif;
   color: $primary-color;

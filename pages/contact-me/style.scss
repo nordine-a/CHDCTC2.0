@@ -1,0 +1,33 @@
+//compileCompressed: $1.min.css
+
+@import "../../assets/scss/variables";
+body {
+  background-color: $secondary-color;
+  .contact-me{
+
+    h1 {
+      margin-top: 20px;
+      font-size: 35px !important;
+      color: $primary-color !important;
+    }
+  }
+
+
+  .phone-mail-contacts {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 45px;
+      }
+
+    a:first-of-type{
+      img {
+        margin-right: 30px;
+      }
+    }
+
+  }
+
+
+}
