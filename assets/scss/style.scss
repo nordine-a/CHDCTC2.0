@@ -1,6 +1,5 @@
 //compileCompressed: ../css/$1.min.css
 @import "variables";
-@import "mixins";
 @import "buttons";
 
 * {
@@ -289,7 +288,7 @@ main {
 
     }
 
-    button {
+    a {
       text-transform: uppercase;
     }
 
