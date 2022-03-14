@@ -13,21 +13,20 @@ body {
   }
 
 
-  .phone-mail-contacts {
-    display: flex;
+  .phone-contact {
+    display: block;
+    margin: auto;
+    text-align: center;
     align-items: center;
+    margin-bottom: 20px;
 
     img {
       height: 45px;
-      }
-
-    a:first-of-type{
-      img {
-        margin-right: 30px;
-      }
     }
 
-  }
 
 
+
+
+    }
 }
