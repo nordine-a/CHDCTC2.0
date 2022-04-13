@@ -160,14 +160,14 @@
       }
     }
     .skills {
-      height: 600px;
+      // height: 600px;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
 
       .container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
 
 
       }

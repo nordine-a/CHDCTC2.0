@@ -31,11 +31,6 @@
           margin-right: 10px;
         }
       }
-    }
-
-
-
-
 
       .logo {
         margin-right: 22px;
@@ -46,25 +41,25 @@
         display: flex;
         align-items: center;
       }
+    }
 
-      .white-menu-icon {
+
+
+
+      .white-menu-icon, .menu-closer {
         position: relative;
         height: 28px;
         margin-right: 0;
       }
 
-      .hidden-mobile-menu {
+      .hidden {
         display: none;
       }
 
 
 @media screen and (max-width:795px) {
 
-  .menu:hover, .menu:active{
 
-    .white-menu-icon {
-      visibility: hidden;
-    }
     .logo-extention {
       z-index: 1 !important;
       position: absolute;
@@ -74,14 +69,14 @@
       height: 63px !important;
     }
 
-    .menu-closer {
-      height: 35px;
-      position: absolute;
-      top: 80px;
-      right: 30px;
-      display: block;
-      margin-right: 0;
-    }
+    // .menu-closer {
+    //   height: 35px;
+    //   position: absolute;
+    //   top: 80px;
+    //   right: 30px;
+    //   display: block;
+    //   margin-right: 0;
+    // }
 
     .hidden-mobile-menu {
       z-index: 0 !important;
@@ -121,10 +116,12 @@
         }
       }
 
-
-
     }
-  }
+
+    .hidden {
+      display: none;
+    }
+
 }
 
     }

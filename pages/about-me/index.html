@@ -31,12 +31,14 @@
 
 
 
-          <div class="menu">
+          <div data-menu class="menu">
 
-            <img class="white-menu-icon only-mobile" src="../../assets/img/mobile-menu/menu-icon-white.svg" alt="menu icon CHDCTC">
+            <img data-menu-button="closer" class="menu-closer only-mobile hidden" src="../../assets/img/mobile-menu/close-button.png" alt="menu icon CHDCTC">
 
-            <div class="hidden-mobile-menu">
-              <a href="index.html"><img class="menu-closer only-mobile" src="../../assets/img/mobile-menu/close-button.png" alt="menu icon CHDCTC"></a>
+            <img data-menu-button="opener" class="white-menu-icon only-mobile" src="../../assets/img/mobile-menu/menu-icon-white.svg" alt="menu icon CHDCTC">
+
+            <div data-mobile-menu class="hidden-mobile-menu hidden">
+
               <ul class="only-desktop">
                 <li class="home-link"><a href="../../index.html">Home</a></li>
                 <li><a href="../about-me/index.html">Chi sono</a></li>
@@ -193,5 +195,9 @@
         <div class="orange-frst-letter"><p>Come</p> <p>Hai</p> <p>Detto</p> <p>Che</p> <p>Ti</p> <p>Chiami</p> </div>
       </div>
     </footer>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="../../assets/js/menuButton.js" defer></script>
+
   </body>
 </html>

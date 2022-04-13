@@ -7,30 +7,7 @@
     <meta name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-      <script type="text/javascript">
-      (function() {
-          // https://dashboard.emailjs.com/admin/integration
-          emailjs.init('QdpXd-86HPbVZU1dE');
-      })();
-      </script>
-    <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              // generate a five digit number for the contact_number variable
-              this.contact_number.value = Math.random() * 100000 | 0;
-              // these IDs from the previous steps
-              emailjs.sendForm('contact_service', 'contact_form', this)
-                  .then(function() {
-                    alert("messaggio inviato con successo, grazie per avermi contattato.");
-                      console.log('SUCCESS!');
-                  }, function(error) {
-                      console.log('FAILED...', error);
-                      alert("Messaggio NON inviato, riprovare");
-                  });
-          });
-      }
-      </script>
+      <script type="text/javascript" src="assets/js/emailjs.js"></script>
   </head>
   <body>
 
@@ -55,12 +32,15 @@
 
 
 
-            <div class="menu">
+            <div data-menu class="menu">
 
-              <img class="white-menu-icon only-mobile" src="assets/img/mobile-menu/menu-icon-white.svg" alt="menu icon CHDCTC">
+              <img data-menu-button="closer" class="menu-closer only-mobile hidden" src="assets/img/mobile-menu/close-button.png" alt="menu icon CHDCTC">
 
-              <div class="hidden-mobile-menu">
-                <a href="index.html"><img class="menu-closer only-mobile" src="assets/img/mobile-menu/close-button.png" alt="menu icon CHDCTC"></a>
+              <img data-menu-button="opener" class="white-menu-icon only-mobile" src="assets/img/mobile-menu/menu-icon-white.svg" alt="menu icon CHDCTC">
+
+
+
+              <div data-mobile-menu class="hidden-mobile-menu hidden">
                 <ul class="only-desktop">
                   <li class="home-link"><a href="index.html">Home</a></li>
                   <li><a href="pages/about-me/index.html">Chi sono</a></li>
@@ -71,7 +51,6 @@
                 </ul>
                 <img class="logo-extention only-mobile" src="assets/img/mobile-menu/logo-extention.svg" alt="CHDCTC logo">
               </div>
-
 
             </div>
 
@@ -105,7 +84,7 @@
                 <picture>
                   <source media='(min-width: 481px)'
                   srcset="assets/img/desktop-pres-photo.png"/>
-                  <source media='(max-width: 481px)'
+                  <source media='(max-width: 480px)'
                   srcset="assets/img/mobile-pres-photo.png"/>
                   <img src='assets/img/mobile-pres-photo.png'/>
                 </picture>
@@ -130,14 +109,14 @@
 
           </section>
 
-          <section class="skills">
+          <section data-skills-container class="skills">
             <div class="container">
-              <div class="hard-skills-container">
+              <div data-hard-skills-container class="hard-skills-container">
 
                 <h1>Hard Skills</h1>
 
                 <div class="skills-cards">
-                  <div class="card html">
+                  <div data-skill-card class="card html">
                     <h2>Html</h2>
                     <img src="assets/img/skills/html5.png" alt="HTML 5 logo">
                     <div class="score-bar">
@@ -146,7 +125,7 @@
                     </div>
                   </div>
 
-                  <div class="card css">
+                  <div data-skill-card class="card css">
                     <h2>CSS</h2>
                     <img src="assets/img/skills/CSS.png" alt="CSS logo">
                     <div class="score-bar">
@@ -155,7 +134,7 @@
                     </div>
                   </div>
 
-                  <div class="card coding">
+                  <div data-skill-card class="card coding">
                     <h2>Coding</h2>
                     <img src="assets/img/skills/coding.png" alt="Coding icon">
                     <div class="score-bar">
@@ -164,7 +143,7 @@
                     </div>
                   </div>
 
-                  <div class="card design">
+                  <div data-skill-card class="card design">
                     <h2>Design</h2>
                     <img src="assets/img/skills/design-icon.png" alt="Design Icon">
                     <div class="score-bar">
@@ -173,7 +152,7 @@
                     </div>
                   </div>
 
-                  <div class="card photoshop">
+                  <div data-skill-card class="card photoshop">
                     <h2>Photoshop</h2>
                     <img src="assets/img/skills/photoshop.png" alt="photoshop logo">
                     <div class="score-bar">
@@ -182,7 +161,7 @@
                     </div>
                   </div>
 
-                  <div class="card excel">
+                  <div data-skill-card class="card excel">
                     <h2>Excel</h2>
                     <img src="assets/img/skills/excel.png" alt="Excel logo">
                     <div class="score-bar">
@@ -194,12 +173,12 @@
                 </div>
               </div>
 
-              <div class="soft-skills-container">
+              <div data-soft-skills-container class="soft-skills-container">
 
                 <h1>Soft Skills</h1>
 
                 <div class="soft-skills skills-cards">
-                  <div class="card problem-solving">
+                  <div data-skill-card class="card problem-solving">
                     <h2>problem solving</h2>
                     <img src="assets/img/skills/problem-solve.png" alt="problem solve icon">
                     <div class="score-bar">
@@ -208,7 +187,7 @@
                     </div>
                   </div>
 
-                  <div class="card creativity">
+                  <div data-skill-card class="card creativity">
                     <h2>creatività</h2>
                     <img src="assets/img/skills/creativity.png" alt="creativity icon">
                     <div class="score-bar">
@@ -217,7 +196,7 @@
                     </div>
                   </div>
 
-                  <div class="card team-work">
+                  <div data-skill-card class="card team-work">
                     <h2>lavoro di squadra</h2>
                     <img src="assets/img/skills/team-work.png" alt="Team work icon">
                     <div class="score-bar">
@@ -226,7 +205,7 @@
                     </div>
                   </div>
 
-                  <div class="card critical-thinking">
+                  <div data-skill-card class="card critical-thinking">
                     <h2>pensiero critico</h2>
                     <img src="assets/img/skills/critical-thinking.png" alt="Critical thinking Icon">
                     <div class="score-bar">
@@ -257,9 +236,8 @@
 
             </div>
           </section>
-
-
       </main>
+
       <div class="empty-footer-space" style="height:60px; width: 100%;">
         <!-- spazio necessario a occupare lo spazio del footer che altrimenti si sovrappone agli altri elementi -->
       </div>
@@ -269,5 +247,16 @@
           <div class="orange-frst-letter"><p>Come</p> <p>Hai</p> <p>Detto</p> <p>Che</p> <p>Ti</p> <p>Chiami</p> </div>
         </div>
       </footer>
+
+      <!-- scripts -->
+      <script type="text/javascript" src="assets/js/menuButton.js" defer>
+      </script>
+
+      <script type="text/javascript" src="assets/js/skills.js" defer>
+      </script>
+
+      <script type="text/javascript" src="assets/js/skills-animation.js">
+
+      </script>
   </body>
 </html>
