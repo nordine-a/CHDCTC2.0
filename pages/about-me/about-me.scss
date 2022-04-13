@@ -52,15 +52,16 @@ main {
       width: 60%;
       font-size: 15px;
       .white{color:white;}
+
     }
 
 
   }
 
-  .overflow-hider {
-  position: relative;
-
+  .completed{
+    color: $secondary-color;
   }
+
 
 
 
