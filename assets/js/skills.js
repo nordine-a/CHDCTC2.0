@@ -61,4 +61,7 @@ function placeSkill(skill, position, container){
 
 //creation of javascript skill
 
-// createNewSkill("javascript" , true, "assets/img/skills/JavaScript-Logo.png", 55, "#F1BF25", 3);
+createNewSkill("java" , true, "assets/img/skills/Java-Logo.png", 55, "#F27405", 3);
+
+
+createNewSkill("javascript" , true, "assets/img/skills/JavaScript-Logo.png", 55, "#F1BF25", 3);
